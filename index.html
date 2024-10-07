@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microservice Interaction</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Interacción con Microservicios</h1>
+    
+    <div>
+        <h2>Crear Usuario</h2>
+        <form id="createUserForm">
+            <input type="text" id="name" placeholder="Nombre" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <button type="submit">Crear Usuario</button>
+        </form>
+        <p id="userResponse"></p>
+    </div>
+
+    <div>
+        <h2>Obtener Producto</h2>
+        <input type="number" id="productId" placeholder="ID de Producto" required>
+        <button onclick="getProduct()">Obtener Producto</button>
+        <p id="productResponse"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
